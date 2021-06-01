@@ -7,4 +7,26 @@
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
+   <Group
+      location = "group:CloudNotesTests/../Pods"
+      name = "Pods">
+      <FileRef
+         location = "group:Pods/Target Support Files/Pods-CloudNotes/Pods-CloudNotes.debug.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:Pods/Target Support Files/Pods-CloudNotes/Pods-CloudNotes.release.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:Pods/Target Support Files/Pods-CloudNotes-CloudNotesUITests/Pods-CloudNotes-CloudNotesUITests.debug.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:Pods/Target Support Files/Pods-CloudNotes-CloudNotesUITests/Pods-CloudNotes-CloudNotesUITests.release.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:Pods/Target Support Files/Pods-CloudNotesTests/Pods-CloudNotesTests.debug.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:Pods/Target Support Files/Pods-CloudNotesTests/Pods-CloudNotesTests.release.xcconfig">
+      </FileRef>
+   </Group>
 </Workspace>

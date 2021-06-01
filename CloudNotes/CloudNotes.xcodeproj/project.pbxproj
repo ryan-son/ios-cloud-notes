@@ -23,6 +23,48 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AAE062B9266636FE0051EF9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAE062B2266636FE0051EF9C /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83CB0F39411722D227328DAA5D2807D8;
+			remoteInfo = "Pods-CloudNotes";
+		};
+		AAE062BB266636FE0051EF9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAE062B2266636FE0051EF9C /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2EA1ED8E5ADCDE33A763D9B78E5C51D1;
+			remoteInfo = "Pods-CloudNotes-CloudNotesUITests";
+		};
+		AAE062BD266636FE0051EF9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAE062B2266636FE0051EF9C /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CECA25E8FBE6366DCA327D43581CBD4;
+			remoteInfo = "Pods-CloudNotesTests";
+		};
+		AAE062C6266637590051EF9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAE062BF266637590051EF9C /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83CB0F39411722D227328DAA5D2807D8;
+			remoteInfo = "Pods-CloudNotes";
+		};
+		AAE062C8266637590051EF9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAE062BF266637590051EF9C /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2EA1ED8E5ADCDE33A763D9B78E5C51D1;
+			remoteInfo = "Pods-CloudNotes-CloudNotesUITests";
+		};
+		AAE062CA266637590051EF9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAE062BF266637590051EF9C /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CECA25E8FBE6366DCA327D43581CBD4;
+			remoteInfo = "Pods-CloudNotesTests";
+		};
 		C7481C8425BBCF3A00B9CA55 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C7481C6225BBCF3900B9CA55 /* Project object */;
@@ -45,6 +87,8 @@
 		6F0AC220E6A829D8D2FE5054 /* Pods-CloudNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudNotes.debug.xcconfig"; path = "Target Support Files/Pods-CloudNotes/Pods-CloudNotes.debug.xcconfig"; sourceTree = "<group>"; };
 		788DF2529E2CD6A46D9530ED /* Pods-CloudNotesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudNotesTests.debug.xcconfig"; path = "Target Support Files/Pods-CloudNotesTests/Pods-CloudNotesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AAE062A8266629800051EF9C /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		AAE062B2266636FE0051EF9C /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		AAE062BF266637590051EF9C /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		C018B4A78E2E8BE5CD9A0568 /* Pods_CloudNotesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudNotesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3DF225F951EC0698D5323EE /* Pods-CloudNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudNotes.release.xcconfig"; path = "Target Support Files/Pods-CloudNotes/Pods-CloudNotes.release.xcconfig"; sourceTree = "<group>"; };
 		C5AF7D9ACFE70DBCB89422D8 /* Pods_CloudNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,19 +149,113 @@
 				788DF2529E2CD6A46D9530ED /* Pods-CloudNotesTests.debug.xcconfig */,
 				0E665114B3A7F3414A2392C0 /* Pods-CloudNotesTests.release.xcconfig */,
 			);
-			path = Pods;
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		AAE062AB26662F550051EF9C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AAE062D8266639310051EF9C /* Cells */,
+				C7481C7325BBCF3900B9CA55 /* Main.storyboard */,
+				C7481C7B25BBCF3A00B9CA55 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAE062AD266630040051EF9C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C7481C7625BBCF3900B9CA55 /* CloudNotes.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		AAE062AE266631A50051EF9C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C7481C6D25BBCF3900B9CA55 /* AppDelegate.swift */,
+				C7481C6F25BBCF3900B9CA55 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		AAE062B1266636BD0051EF9C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AAE062D9266639F60051EF9C /* Extensions */,
+				E6C3E9219B02E68B2C71D785 /* Frameworks */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AAE062B3266636FE0051EF9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAE062BA266636FE0051EF9C /* Pods_CloudNotes.framework */,
+				AAE062BC266636FE0051EF9C /* Pods_CloudNotes_CloudNotesUITests.framework */,
+				AAE062BE266636FE0051EF9C /* Pods_CloudNotesTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAE062C0266637590051EF9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAE062C7266637590051EF9C /* Pods_CloudNotes.framework */,
+				AAE062C9266637590051EF9C /* Pods_CloudNotes_CloudNotesUITests.framework */,
+				AAE062CB266637590051EF9C /* Pods_CloudNotesTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAE062D6266637CA0051EF9C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C7481C7925BBCF3A00B9CA55 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		AAE062D7266638E70051EF9C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C7481C7125BBCF3900B9CA55 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AAE062D8266639310051EF9C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AAE062D9266639F60051EF9C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AAE0631C266663650051EF9C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		C7481C6125BBCF3900B9CA55 = {
 			isa = PBXGroup;
 			children = (
+				AAE062BF266637590051EF9C /* Pods.xcodeproj */,
 				AAE062A8266629800051EF9C /* .swiftlint.yml */,
 				C7481C6C25BBCF3900B9CA55 /* CloudNotes */,
 				C7481C8625BBCF3A00B9CA55 /* CloudNotesTests */,
 				C7481C9125BBCF3A00B9CA55 /* CloudNotesUITests */,
 				C7481C6B25BBCF3900B9CA55 /* Products */,
-				3E811D0F34C596BFC3D9F205 /* Pods */,
-				E6C3E9219B02E68B2C71D785 /* Frameworks */,
+				AAE062B2266636FE0051EF9C /* Pods.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,14 +272,14 @@
 		C7481C6C25BBCF3900B9CA55 /* CloudNotes */ = {
 			isa = PBXGroup;
 			children = (
-				C7481C6D25BBCF3900B9CA55 /* AppDelegate.swift */,
-				C7481C6F25BBCF3900B9CA55 /* SceneDelegate.swift */,
-				C7481C7125BBCF3900B9CA55 /* ViewController.swift */,
-				C7481C7325BBCF3900B9CA55 /* Main.storyboard */,
-				C7481C7925BBCF3A00B9CA55 /* Assets.xcassets */,
-				C7481C7B25BBCF3A00B9CA55 /* LaunchScreen.storyboard */,
+				AAE0631C266663650051EF9C /* Models */,
 				C7481C7E25BBCF3A00B9CA55 /* Info.plist */,
-				C7481C7625BBCF3900B9CA55 /* CloudNotes.xcdatamodeld */,
+				AAE062AE266631A50051EF9C /* Application */,
+				AAE062AB26662F550051EF9C /* Views */,
+				AAE062D7266638E70051EF9C /* Controllers */,
+				AAE062D6266637CA0051EF9C /* Assets */,
+				AAE062B1266636BD0051EF9C /* Helpers */,
+				AAE062AD266630040051EF9C /* CoreData */,
 			);
 			path = CloudNotes;
 			sourceTree = "<group>";
@@ -149,6 +287,7 @@
 		C7481C8625BBCF3A00B9CA55 /* CloudNotesTests */ = {
 			isa = PBXGroup;
 			children = (
+				3E811D0F34C596BFC3D9F205 /* Pods */,
 				C7481C8725BBCF3A00B9CA55 /* CloudNotesTests.swift */,
 				C7481C8925BBCF3A00B9CA55 /* Info.plist */,
 			);
@@ -172,6 +311,7 @@
 				C018B4A78E2E8BE5CD9A0568 /* Pods_CloudNotesTests.framework */,
 			);
 			name = Frameworks;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +407,16 @@
 			mainGroup = C7481C6125BBCF3900B9CA55;
 			productRefGroup = C7481C6B25BBCF3900B9CA55 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AAE062C0266637590051EF9C /* Products */;
+					ProjectRef = AAE062BF266637590051EF9C /* Pods.xcodeproj */;
+				},
+				{
+					ProductGroup = AAE062B3266636FE0051EF9C /* Products */;
+					ProjectRef = AAE062B2266636FE0051EF9C /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C7481C6925BBCF3900B9CA55 /* CloudNotes */,
@@ -275,6 +425,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AAE062BA266636FE0051EF9C /* Pods_CloudNotes.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_CloudNotes.framework;
+			remoteRef = AAE062B9266636FE0051EF9C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AAE062BC266636FE0051EF9C /* Pods_CloudNotes_CloudNotesUITests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_CloudNotes_CloudNotesUITests.framework;
+			remoteRef = AAE062BB266636FE0051EF9C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AAE062BE266636FE0051EF9C /* Pods_CloudNotesTests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_CloudNotesTests.framework;
+			remoteRef = AAE062BD266636FE0051EF9C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AAE062C7266637590051EF9C /* Pods_CloudNotes.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_CloudNotes.framework;
+			remoteRef = AAE062C6266637590051EF9C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AAE062C9266637590051EF9C /* Pods_CloudNotes_CloudNotesUITests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_CloudNotes_CloudNotesUITests.framework;
+			remoteRef = AAE062C8266637590051EF9C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AAE062CB266637590051EF9C /* Pods_CloudNotesTests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_CloudNotesTests.framework;
+			remoteRef = AAE062CA266637590051EF9C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C7481C6825BBCF3900B9CA55 /* Resources */ = {
