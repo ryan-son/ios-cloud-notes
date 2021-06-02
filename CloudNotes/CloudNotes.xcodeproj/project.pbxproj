@@ -11,6 +11,8 @@
 		21E02F38703634BB7D916BCB /* Pods_CloudNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AF7D9ACFE70DBCB89422D8 /* Pods_CloudNotes.framework */; };
 		AAE062A9266629800051EF9C /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AAE062A8266629800051EF9C /* .swiftlint.yml */; };
 		AAE06348266833A00051EF9C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE06347266833A00051EF9C /* Note.swift */; };
+		AAE0634A266836EF0051EF9C /* TestAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE06349266836EF0051EF9C /* TestAssets.swift */; };
+		AAE0634C266838830051EF9C /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE0634B266838830051EF9C /* JSONDecoder+Extension.swift */; };
 		C7481C6E25BBCF3900B9CA55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7481C6D25BBCF3900B9CA55 /* AppDelegate.swift */; };
 		C7481C7025BBCF3900B9CA55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7481C6F25BBCF3900B9CA55 /* SceneDelegate.swift */; };
 		C7481C7225BBCF3900B9CA55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7481C7125BBCF3900B9CA55 /* ViewController.swift */; };
@@ -90,6 +92,8 @@
 		AAE062B2266636FE0051EF9C /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		AAE062BF266637590051EF9C /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		AAE06347266833A00051EF9C /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		AAE06349266836EF0051EF9C /* TestAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAssets.swift; sourceTree = "<group>"; };
+		AAE0634B266838830051EF9C /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
 		C018B4A78E2E8BE5CD9A0568 /* Pods_CloudNotesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudNotesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3DF225F951EC0698D5323EE /* Pods-CloudNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudNotes.release.xcconfig"; path = "Target Support Files/Pods-CloudNotes/Pods-CloudNotes.release.xcconfig"; sourceTree = "<group>"; };
 		C5AF7D9ACFE70DBCB89422D8 /* Pods_CloudNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,6 +231,7 @@
 		AAE062D9266639F60051EF9C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AAE0634B266838830051EF9C /* JSONDecoder+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 			children = (
 				3E811D0F34C596BFC3D9F205 /* Pods */,
 				C7481C8725BBCF3A00B9CA55 /* CloudNotesTests.swift */,
+				AAE06349266836EF0051EF9C /* TestAssets.swift */,
 				C7481C8925BBCF3A00B9CA55 /* Info.plist */,
 			);
 			path = CloudNotesTests;
@@ -590,6 +596,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE0634C266838830051EF9C /* JSONDecoder+Extension.swift in Sources */,
 				AAE06348266833A00051EF9C /* Note.swift in Sources */,
 				C7481C7225BBCF3900B9CA55 /* ViewController.swift in Sources */,
 				C7481C6E25BBCF3900B9CA55 /* AppDelegate.swift in Sources */,
@@ -602,6 +609,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE0634A266836EF0051EF9C /* TestAssets.swift in Sources */,
 				C7481C8825BBCF3A00B9CA55 /* CloudNotesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
