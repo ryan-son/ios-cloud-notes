@@ -13,7 +13,6 @@
 		C7481C6E25BBCF3900B9CA55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7481C6D25BBCF3900B9CA55 /* AppDelegate.swift */; };
 		C7481C7025BBCF3900B9CA55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7481C6F25BBCF3900B9CA55 /* SceneDelegate.swift */; };
 		C7481C7225BBCF3900B9CA55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7481C7125BBCF3900B9CA55 /* ViewController.swift */; };
-		C7481C7525BBCF3900B9CA55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7481C7325BBCF3900B9CA55 /* Main.storyboard */; };
 		C7481C7825BBCF3900B9CA55 /* CloudNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7481C7625BBCF3900B9CA55 /* CloudNotes.xcdatamodeld */; };
 		C7481C7A25BBCF3A00B9CA55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7481C7925BBCF3A00B9CA55 /* Assets.xcassets */; };
 		C7481C7D25BBCF3A00B9CA55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7481C7B25BBCF3A00B9CA55 /* LaunchScreen.storyboard */; };
@@ -96,7 +95,6 @@
 		C7481C6D25BBCF3900B9CA55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7481C6F25BBCF3900B9CA55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C7481C7125BBCF3900B9CA55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C7481C7425BBCF3900B9CA55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7481C7725BBCF3900B9CA55 /* CloudNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CloudNotes.xcdatamodel; sourceTree = "<group>"; };
 		C7481C7925BBCF3A00B9CA55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7481C7C25BBCF3A00B9CA55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -156,8 +154,7 @@
 		AAE062AB26662F550051EF9C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AAE062D8266639310051EF9C /* Cells */,
-				C7481C7325BBCF3900B9CA55 /* Main.storyboard */,
+				AAE0634626682E0D0051EF9C /* Cells */,
 				C7481C7B25BBCF3A00B9CA55 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -225,13 +222,6 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		AAE062D8266639310051EF9C /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
 		AAE062D9266639F60051EF9C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,11 +229,18 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		AAE0631C266663650051EF9C /* Models */ = {
+		AAE0634526682E040051EF9C /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		AAE0634626682E0D0051EF9C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		C7481C6125BBCF3900B9CA55 = {
@@ -272,8 +269,8 @@
 		C7481C6C25BBCF3900B9CA55 /* CloudNotes */ = {
 			isa = PBXGroup;
 			children = (
-				AAE0631C266663650051EF9C /* Models */,
 				C7481C7E25BBCF3A00B9CA55 /* Info.plist */,
+				AAE0634526682E040051EF9C /* Models */,
 				AAE062AE266631A50051EF9C /* Application */,
 				AAE062AB26662F550051EF9C /* Views */,
 				AAE062D7266638E70051EF9C /* Controllers */,
@@ -479,7 +476,6 @@
 				AAE062A9266629800051EF9C /* .swiftlint.yml in Resources */,
 				C7481C7D25BBCF3A00B9CA55 /* LaunchScreen.storyboard in Resources */,
 				C7481C7A25BBCF3A00B9CA55 /* Assets.xcassets in Resources */,
-				C7481C7525BBCF3900B9CA55 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,14 +626,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C7481C7325BBCF3900B9CA55 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C7481C7425BBCF3900B9CA55 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C7481C7B25BBCF3A00B9CA55 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -777,7 +765,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ryan-son.cloudNotes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -796,7 +784,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ryan-son.cloudNotes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
