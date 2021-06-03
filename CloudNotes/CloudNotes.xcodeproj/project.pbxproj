@@ -11,11 +11,15 @@
 		21E02F38703634BB7D916BCB /* Pods_CloudNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AF7D9ACFE70DBCB89422D8 /* Pods_CloudNotes.framework */; };
 		AAE062A9266629800051EF9C /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AAE062A8266629800051EF9C /* .swiftlint.yml */; };
 		AAE06348266833A00051EF9C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE06347266833A00051EF9C /* Note.swift */; };
-		AAE0634A266836EF0051EF9C /* TestAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE06349266836EF0051EF9C /* TestAssets.swift */; };
 		AAE0634C266838830051EF9C /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE0634B266838830051EF9C /* JSONDecoder+Extension.swift */; };
+		AAE0634E266840B80051EF9C /* OSLog+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE0634D266840B80051EF9C /* OSLog+Extension.swift */; };
+		AAE06350266841680051EF9C /* UIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE0634F266841680051EF9C /* UIError.swift */; };
+		AAE06353266848F10051EF9C /* NoteCollectionViewListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE06351266848F10051EF9C /* NoteCollectionViewListCell.swift */; };
+		AAE06354266848F10051EF9C /* NoteCollectionViewListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE06352266848F10051EF9C /* NoteCollectionViewListCell.xib */; };
+		AAE06356266856880051EF9C /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE06355266856880051EF9C /* DataError.swift */; };
 		C7481C6E25BBCF3900B9CA55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7481C6D25BBCF3900B9CA55 /* AppDelegate.swift */; };
 		C7481C7025BBCF3900B9CA55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7481C6F25BBCF3900B9CA55 /* SceneDelegate.swift */; };
-		C7481C7225BBCF3900B9CA55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7481C7125BBCF3900B9CA55 /* ViewController.swift */; };
+		C7481C7225BBCF3900B9CA55 /* NoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7481C7125BBCF3900B9CA55 /* NoteListViewController.swift */; };
 		C7481C7825BBCF3900B9CA55 /* CloudNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7481C7625BBCF3900B9CA55 /* CloudNotes.xcdatamodeld */; };
 		C7481C7A25BBCF3A00B9CA55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7481C7925BBCF3A00B9CA55 /* Assets.xcassets */; };
 		C7481C7D25BBCF3A00B9CA55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7481C7B25BBCF3A00B9CA55 /* LaunchScreen.storyboard */; };
@@ -92,15 +96,19 @@
 		AAE062B2266636FE0051EF9C /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		AAE062BF266637590051EF9C /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		AAE06347266833A00051EF9C /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
-		AAE06349266836EF0051EF9C /* TestAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAssets.swift; sourceTree = "<group>"; };
 		AAE0634B266838830051EF9C /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
+		AAE0634D266840B80051EF9C /* OSLog+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSLog+Extension.swift"; sourceTree = "<group>"; };
+		AAE0634F266841680051EF9C /* UIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIError.swift; sourceTree = "<group>"; };
+		AAE06351266848F10051EF9C /* NoteCollectionViewListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCollectionViewListCell.swift; sourceTree = "<group>"; };
+		AAE06352266848F10051EF9C /* NoteCollectionViewListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteCollectionViewListCell.xib; sourceTree = "<group>"; };
+		AAE06355266856880051EF9C /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
 		C018B4A78E2E8BE5CD9A0568 /* Pods_CloudNotesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudNotesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3DF225F951EC0698D5323EE /* Pods-CloudNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudNotes.release.xcconfig"; path = "Target Support Files/Pods-CloudNotes/Pods-CloudNotes.release.xcconfig"; sourceTree = "<group>"; };
 		C5AF7D9ACFE70DBCB89422D8 /* Pods_CloudNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7481C6A25BBCF3900B9CA55 /* CloudNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7481C6D25BBCF3900B9CA55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7481C6F25BBCF3900B9CA55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C7481C7125BBCF3900B9CA55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C7481C7125BBCF3900B9CA55 /* NoteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewController.swift; sourceTree = "<group>"; };
 		C7481C7725BBCF3900B9CA55 /* CloudNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CloudNotes.xcdatamodel; sourceTree = "<group>"; };
 		C7481C7925BBCF3A00B9CA55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7481C7C25BBCF3A00B9CA55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -223,7 +231,7 @@
 		AAE062D7266638E70051EF9C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C7481C7125BBCF3900B9CA55 /* ViewController.swift */,
+				C7481C7125BBCF3900B9CA55 /* NoteListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -232,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				AAE0634B266838830051EF9C /* JSONDecoder+Extension.swift */,
+				AAE0634D266840B80051EF9C /* OSLog+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -240,6 +249,8 @@
 			isa = PBXGroup;
 			children = (
 				AAE06347266833A00051EF9C /* Note.swift */,
+				AAE0634F266841680051EF9C /* UIError.swift */,
+				AAE06355266856880051EF9C /* DataError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -247,6 +258,8 @@
 		AAE0634626682E0D0051EF9C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				AAE06351266848F10051EF9C /* NoteCollectionViewListCell.swift */,
+				AAE06352266848F10051EF9C /* NoteCollectionViewListCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -294,7 +307,6 @@
 			children = (
 				3E811D0F34C596BFC3D9F205 /* Pods */,
 				C7481C8725BBCF3A00B9CA55 /* CloudNotesTests.swift */,
-				AAE06349266836EF0051EF9C /* TestAssets.swift */,
 				C7481C8925BBCF3A00B9CA55 /* Info.plist */,
 			);
 			path = CloudNotesTests;
@@ -482,6 +494,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE06354266848F10051EF9C /* NoteCollectionViewListCell.xib in Resources */,
 				AAE062A9266629800051EF9C /* .swiftlint.yml in Resources */,
 				C7481C7D25BBCF3A00B9CA55 /* LaunchScreen.storyboard in Resources */,
 				C7481C7A25BBCF3A00B9CA55 /* Assets.xcassets in Resources */,
@@ -596,10 +609,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE06356266856880051EF9C /* DataError.swift in Sources */,
+				AAE06350266841680051EF9C /* UIError.swift in Sources */,
+				AAE06353266848F10051EF9C /* NoteCollectionViewListCell.swift in Sources */,
 				AAE0634C266838830051EF9C /* JSONDecoder+Extension.swift in Sources */,
 				AAE06348266833A00051EF9C /* Note.swift in Sources */,
-				C7481C7225BBCF3900B9CA55 /* ViewController.swift in Sources */,
+				C7481C7225BBCF3900B9CA55 /* NoteListViewController.swift in Sources */,
 				C7481C6E25BBCF3900B9CA55 /* AppDelegate.swift in Sources */,
+				AAE0634E266840B80051EF9C /* OSLog+Extension.swift in Sources */,
 				C7481C7025BBCF3900B9CA55 /* SceneDelegate.swift in Sources */,
 				C7481C7825BBCF3900B9CA55 /* CloudNotes.xcdatamodeld in Sources */,
 			);
@@ -609,7 +626,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAE0634A266836EF0051EF9C /* TestAssets.swift in Sources */,
 				C7481C8825BBCF3A00B9CA55 /* CloudNotesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
