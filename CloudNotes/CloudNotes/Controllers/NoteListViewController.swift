@@ -37,20 +37,15 @@ final class NoteListViewController: UIViewController {
 
 // MARK: - Load Notes from Sample JSON
 extension NoteListViewController {
-    @discardableResult
-    func loadNotes(from assetName: String) -> Result<[Note], DataError> {
-        guard let noteData = NSDataAsset(name: assetName)?.data else {
-            os_log(.error, log: .data, OSLog.objectCFormatSpecifier, DataError.cannotFindFile.localizedDescription)
-            return .failure(DataError.cannotFindFile)
-        }
-        let decoder = JSONDecoder(dateDecodingStrategy: .secondsSince1970)
-        guard let decoded = try? decoder.decode([Note].self, from: noteData) else {
-            os_log(.error, log: .data, OSLog.objectCFormatSpecifier, DataError.decodingFailed.localizedDescription)
-            return .failure(DataError.decodingFailed)
-        }
-        notes = decoded
+    func loadNotes(from assetName: String) {
+        let decodedResult = JSONDecoder().decode(to: [Note].self, from: assetName)
         
-        return .success(notes)
+        switch decodedResult {
+        case .success(let decodedNotes):
+            notes = decodedNotes
+        case .failure(let dataError):
+            os_log(.error, log: .data, OSLog.objectCFormatSpecifier, dataError.localizedDescription)
+        }
     }
 }
 
